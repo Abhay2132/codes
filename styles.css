@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+h1 {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 22px;
+	color: #333;
+	text-align: center;
+	font-weight: 400;
+	background: #ffe;
+}
+
+nav {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: scroll;
+}
+
+.nav-item-con {
+	display: flex;
+	--bg-color: #392;
+	position: relative;
+}
+
+.nav-item {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	padding: 0 10px;
+	font-weight: 300;
+	background: var(--bg-color);
+	position: relative;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.tail {
+	border: 15px solid rgba(0,0,0,0);
+	border-left-color: var(--bg-color);
+	border-right: 0px solid rgba(0,0,0,0);
+}
+
+.nav-item-con:nth-child(even) {
+	--bg-color: #274E8F;
+}
+
+.nav-item-con:nth-child(odd) {
+	--bg-color: #008558;
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1rem;
+  height: 1rem;
+	margin-right: 15px;
+  stroke: #333;
+  stroke-width: 1;
+  fill: #555;
+}
+
+.folder , .file , .go-back {
+	width: calc(100% - 10px);
+	margin: 5px;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	font-weight: 300;
+}
+
+.folder {
+	background: #EFF200;
+}
+
+.file {
+	background: #eee;
+}
+
+.go-back {
+	font-weight: 400;
+}
+
+.folder-icon {
+  transform: scale(1.3);
+}
+
+.file-icon {
+  transform: scale(1.1);
+}
+
+.go-back-icon {
+	transform: scale(1.1) translateY(1.5px);
+}
+
+.folder:hover , .file:hover , .go-back:hover {
+	background: #1982FF;
+	color: #fff;
+}
